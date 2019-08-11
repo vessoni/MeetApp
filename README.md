@@ -1,4 +1,4 @@
-# node-express-startAplication
+# MeetApp
 
 This is a simple config to start development in Node Express, with all configs in VSCode.
 
