@@ -92,7 +92,7 @@ class MeetupController {
       return res.status(400).json({ error: 'Can not edit pass Meetups' });
     }
 
-    // await meetup.destroy();
+    await meetup.destroy();
 
     return res.send();
   }
