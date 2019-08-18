@@ -8,7 +8,6 @@ import SessionController from './app/controllers/SessionController';
 import authMiddleware from './app/middlewares/auth';
 import FileController from './app/controllers/FileController';
 import MeetupController from './app/controllers/MeetupController';
-import Subscription from './app/models/Subscription';
 import SubscriptionController from './app/controllers/SubscriptionController';
 
 const routes = new Router();
