@@ -6,6 +6,13 @@ import Meetup from '../models/Meetup';
 import Mail from '../../lib/Mail';
 
 class SubscriptionController {
+  async index(req, res) {
+    const subscriptions = await Subscription.findAll({
+      where: { user_id: req.userId },
+    });
+    return res.json(subscriptions);
+  }
+
   // store = add
   async store(req, res) {
     // User exist's ?
